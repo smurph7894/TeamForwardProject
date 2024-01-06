@@ -1,0 +1,760 @@
+[{
+  "_id": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "firstName": "Andrew",
+  "lastName": "Lederman",
+  "email": "alederman@codingdojo.com",
+  "password": "$2b$10$hQo.yUqZAe2lDOXfgMNEXe9d1RBmnvFOpOIAQpLrT.NCK//.xtbEC",
+  "location": {},
+  "interests": {
+    "networking": false,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": false,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "cloudinaryId": "lupt7bre8dswgawifm82",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681398561/lupt7bre8dswgawifm82.jpg"
+},{
+  "_id": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "firstName": "Biri",
+  "lastName": "Nobu",
+  "email": "biri@gmail.com",
+  "password": "$2b$10$VCdjbV5I4IY4.zPrhZQsGOCZtnQ4J4Qzesn5fr9/EaUia67xn8Imq",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.246737,
+      33.949099
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "gimme scratchies",
+  "cloudinaryId": "nv07zas9qb1foghdjffe",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681502540/nv07zas9qb1foghdjffe.jpg",
+  "profession": "doggo",
+  "radius": 5,
+  "zipCode": 90002
+},{
+  "_id": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "firstName": "Emily",
+  "lastName": "Davis",
+  "email": "demo@la.com",
+  "password": "$2b$10$6A3y3SbKgzgpDz6S1PyqtuKE3QAlFIWvyvW4YO8jG61rnLhcq.o0i",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.246737,
+      33.949099
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": false,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Tech enthusiast and passionate coder. Currently working on a new app to revolutionize the way we connect with each other.",
+  "cloudinaryId": "nzzjgp957udeevnyk46z",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681599268/nzzjgp957udeevnyk46z.jpg",
+  "profession": "Software Developer",
+  "zipCode": 90002,
+  "radius": 5
+},{
+  "_id": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "firstName": "Ryan",
+  "lastName": "Kim",
+  "email": "r@r.com",
+  "password": "$2b$10$Ew7dUFMJaE1bb55jeTZ8OerfGSu7bnW9rg.zNABh/GjPL566zjNS2",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.272783,
+      33.964131
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": false,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Creative and innovative problem-solver with a passion for developing intuitive user experiences. Dedicated to improving the way people interact with technology.",
+  "cloudinaryId": "dow4cn4xymejilbhibxd",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681599492/dow4cn4xymejilbhibxd.png",
+  "profession": "UI/UX Designer",
+  "zipCode": 90003
+},{
+  "_id": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "firstName": "Michael",
+  "lastName": "Williams",
+  "email": "m@m.com",
+  "password": "$2b$10$Cs/zae.P92cJQPZI1setbuK1HzDW0UBdN1wtU6cgec/M6W1CjuPGW",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.272783,
+      33.964131
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Driven and detail-oriented software developer with a love for complex problem-solving. Excited to work on challenging projects that push me to the limits. Looking to connect with like-minded individuals who possibly love to hike and go on long walks. ",
+  "cloudinaryId": "nqg7n4bygmx6fufhbtln",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681599625/nqg7n4bygmx6fufhbtln.jpg",
+  "profession": "Full-Stack Developer",
+  "zipCode": 90003
+},{
+  "_id": {
+    "$oid": "643b2ccb9facca04aa08f5e5"
+  },
+  "firstName": "Brian",
+  "lastName": "Burkes",
+  "email": "b@b.com",
+  "password": "$2b$10$Y.qXuwc2QvZrxXIJnTZb6uK7UWiFU79rTb.E4QZaEG0UdLl48TvGi",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.246737,
+      33.949099
+    ]
+  },
+  "interests": {
+    "networking": false,
+    "mentorship": true,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": true,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey there, I'm Brian! I'm a tech aficionado with a love for hardware engineering. When I'm not tinkering with electronics, I enjoy trying new coffee shops around LA.",
+  "cloudinaryId": "axj05nfsen5dvb4xlxvq",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681599827/axj05nfsen5dvb4xlxvq.jpg",
+  "profession": "Hardware Engineer",
+  "zipCode": 90002
+},{
+  "_id": {
+    "$oid": "643b2d959facca04aa08f5f1"
+  },
+  "firstName": "Maria",
+  "lastName": "Rodriguez",
+  "email": "ma@m.com",
+  "password": "$2b$10$KLBJHLnz7Aeq6zfOKqBwwuFnI8W/m4oZ31A0y38ENhtCC3PcVOJUe",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.246737,
+      33.949099
+    ]
+  },
+  "interests": {
+    "networking": false,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": " Hi, I'm Maria! I'm a tech enthusiast with a passion for data analysis. When I'm not working on projects, I love to hike in the hills around LA. Catch me in Hollywood getting crazy and talking tech. Would love to connect!",
+  "cloudinaryId": "kefqsf9kudejwxe4yppy",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681599948/kefqsf9kudejwxe4yppy.png",
+  "profession": "Data Analyst",
+  "zipCode": 90002
+},{
+  "_id": {
+    "$oid": "643b2e009facca04aa08f5fd"
+  },
+  "firstName": "Ashley",
+  "lastName": "Wiens",
+  "email": "a@a.com",
+  "password": "$2b$10$Xd2xpYssaucZYAo7qKYo0Oypnz0bD8ITlnnQLrAvgXbWnxVVWATN.",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.272783,
+      33.964131
+    ]
+  },
+  "interests": {
+    "networking": false,
+    "mentorship": false,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hi, I'm Ashley! I'm a tech nerd with a knack for UX design. When I'm not working on designs, I like to explore the different neighborhoods in LA.",
+  "cloudinaryId": "y3kw09cyh8crlgja6i1e",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681600097/y3kw09cyh8crlgja6i1e.jpg",
+  "profession": "UX Designer",
+  "zipCode": 90003
+},{
+  "_id": {
+    "$oid": "643b2eba9facca04aa08f609"
+  },
+  "firstName": "Samantha",
+  "lastName": "Bryant",
+  "email": "s@s.com",
+  "password": "$2b$10$xSF5k3laHcJbnQzRzDX1guXhHgIDP0rwe7tIflD7jI4kKjDPeYGeK",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.346724,
+      34.009552
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": false,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hi there, I'm Samantha! I'm a tech enthusiast with a love for project management. When I'm not organizing schedules, I enjoy trying out new restaurants in LA and getting free drinks at bars.",
+  "cloudinaryId": "hlnez1zcepwkvyn2upuk",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681600266/hlnez1zcepwkvyn2upuk.png",
+  "profession": " Project Manager",
+  "zipCode": 90008
+},{
+  "_id": {
+    "$oid": "643b2f649facca04aa08f615"
+  },
+  "firstName": "Diana",
+  "lastName": "Smith",
+  "email": "d@d.com",
+  "password": "$2b$10$5RjBd5br2VjRBBOWOeMF8.bIdYSpScgLFBu/q8UoV28dvr6B3mb62",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.246737,
+      33.949099
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "I'm a tech marketer who loves creating compelling content and engaging with audiences online. I specialize in social media and influencer marketing and have worked with some of the biggest brands in the industry. In my free time, I enjoy playing video games and watching movies.",
+  "cloudinaryId": "hfwk60obsrck1lvpytkm",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681600405/hfwk60obsrck1lvpytkm.jpg",
+  "profession": "Tech Marketer",
+  "zipCode": 90002
+},{
+  "_id": {
+    "$oid": "643b30899facca04aa08f636"
+  },
+  "firstName": "Olivia",
+  "lastName": "Jones",
+  "email": "o@o.com",
+  "password": "$2b$10$Oy75xcKnYfcJv4PpfUJx4O.uT2KDDVEy4xpLksMYEgI0eQvq0daQS",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.272783,
+      33.964131
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": true,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "I'm a cybersecurity analyst who specializes in threat detection and incident response. I have experience working in both private and public sectors and am passionate about keeping organizations safe from cyber threats. In my free time, I enjoy cooking and trying out new recipes.",
+  "cloudinaryId": "y104av77seazxs9yzhdp",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681600795/y104av77seazxs9yzhdp.png",
+  "profession": "Cybersecurity Analyst.",
+  "zipCode": 90003
+},{
+  "_id": {
+    "$oid": "643b31739facca04aa08f661"
+  },
+  "firstName": "Liam",
+  "lastName": "Lopez",
+  "email": "l@l.com",
+  "password": "$2b$10$O5YmQK1KNO8UaBiSpCTYEeh/EHPHc/fTTWi3Bg9jNURadGlEdEF46",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -118.246737,
+      33.949099
+    ]
+  },
+  "interests": {
+    "networking": false,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": false,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "I'm a digital strategist who helps companies develop and implement effective digital marketing campaigns. I have experience in various industries, including fashion, beauty, and entertainment. When I'm not working, I enjoy playing guitar and writing songs.",
+  "cloudinaryId": "p6gonzr6bepyviz9xwnv",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681600939/p6gonzr6bepyviz9xwnv.jpg",
+  "profession": "Digital Strategist",
+  "zipCode": 90002
+},{
+  "_id": {
+    "$oid": "643c2ed1f4d9cbedaac7cbf5"
+  },
+  "firstName": "Ashley",
+  "lastName": "Johnson",
+  "email": "a@sea.com",
+  "password": "$2b$10$IhHpJmX9r4takp/rusQ9euZDcHr24RhZRPOoQGLuEwZZWtkJKRepy",
+  "location": {},
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": false,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "As a UI/UX designer, I'm passionate about creating meaningful user experiences. I've worked with numerous startups in Seattle, designing intuitive interfaces for web and mobile applications. When not designing, I enjoy playing the piano, practicing yoga, and exploring the outdoors.",
+  "cloudinaryId": "jzihq1hatrsygffthamn",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681665836/jzihq1hatrsygffthamn.webp",
+  "profession": "UI/UX Designer",
+  "zipCode": null,
+  "radius": 5
+},{
+  "_id": {
+    "$oid": "643c2f83f4d9cbedaac7cc22"
+  },
+  "firstName": "Mohammed",
+  "lastName": "Ali",
+  "email": "m@sea.com",
+  "password": "$2b$10$ZXhle6k8thuKzQQLbb0OweIHCfHmmLP6N3Jn/5oxfRyJeKGP.2ye6",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": false,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey, I'm Mohammed, a data analyst based in Seattle. I'm passionate about using data to solve complex business problems. With experience in data visualization, statistical analysis, and machine learning, I help companies make data-driven decisions. When I'm not working, you can find me playing soccer, volunteering at local nonprofits, or trying out new restaurants.",
+  "cloudinaryId": "k0ydk4necudekcer2hv6",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681666020/k0ydk4necudekcer2hv6.jpg",
+  "profession": "Data Analyst",
+  "zipCode": 98101,
+  "radius": 5
+},{
+  "_id": {
+    "$oid": "643c3058f4d9cbedaac7cc61"
+  },
+  "firstName": "Jenna",
+  "lastName": "Rogers",
+  "email": "j@sea.com",
+  "password": "$2b$10$yyddeoQ8nkKLp5rIa.veAOgshuwnq.n7kw6H3fWHR6p3WdRIQeMOa",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey, I'm Jenna, a product manager based in Seattle. I love working with cross-functional teams to launch successful products in the consumer tech industry. I'm passionate about user research and leveraging data to create innovative products. Outside of work, you can find me hiking, practicing meditation, or volunteering at a local animal shelter.",
+  "cloudinaryId": "delkleejcd72iv4nksl1",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681666179/delkleejcd72iv4nksl1.webp",
+  "profession": "Product Manager",
+  "zipCode": 98101,
+  "radius": 5
+},{
+  "_id": {
+    "$oid": "643c30dff4d9cbedaac7cc71"
+  },
+  "firstName": "Emily",
+  "lastName": "Witherspoon",
+  "email": "e@sea.com",
+  "password": "$2b$10$B0I4m1vFlJb3za2iQc2dJuhZgJgil5q/8CT1hzL5DPcUClCcQG.8W",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": false,
+    "mentorship": true,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": false,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey there, I'm Emily, a software engineer based in Seattle. I specialize in building scalable and secure backend systems. I'm passionate about programming and love learning new technologies. When I'm not coding, you can find me playing video games, practicing martial arts, or hiking in the Pacific Northwest.",
+  "cloudinaryId": "axrxcoupzht8egsev60r",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681666351/axrxcoupzht8egsev60r.jpg",
+  "profession": " Software Engineer",
+  "radius": 5,
+  "zipCode": 98101
+},{
+  "_id": {
+    "$oid": "643c31d5f4d9cbedaac7cc81"
+  },
+  "firstName": "James",
+  "lastName": "Gomez",
+  "email": "ja@sea.com",
+  "password": "$2b$10$hWSfrO8trW7YIviEyB58cOwgDJLqiRitfEnVZi9x3Ud7Q72k6XeX6",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": false,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": true,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey, I'm James, a mobile app developer based in Seattle. I specialize in building user-friendly and engaging apps for iOS and Android platforms. I'm passionate about creating innovative solutions and love attending hackathons and coding competitions. When I'm not coding, you can find me reading, traveling, or practicing yoga.",
+  "cloudinaryId": "qymd4diccuc7hegk2qps",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681666771/qymd4diccuc7hegk2qps.webp",
+  "profession": "Mobile App Developer ",
+  "zipCode": 98101,
+  "radius": 5
+},{
+  "_id": {
+    "$oid": "643c3373f4d9cbedaac7cca7"
+  },
+  "firstName": "David",
+  "lastName": "Broder",
+  "email": "d@sea.com",
+  "password": "$2b$10$UEmgvQqZmADHRVKoDrmMv.Q5lOYxqPO2DqNsdj5qxRKEPbGrcYwOC",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey, I'm David, a marketing manager based in Seattle. I'm passionate about creating effective marketing campaigns that drive growth and increase brand awareness. With a background in both data analysis and creative strategy, I enjoy working on both quantitative and qualitative aspects of marketing. Outside of work, you can find me playing basketball, hiking, or reading up on the latest marketing trends.",
+  "profession": "Marketing Manager",
+  "radius": 5,
+  "zipCode": 98101,
+  "cloudinaryId": "bx7u9be77ca5wvel4i6c",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681668979/bx7u9be77ca5wvel4i6c.jpg"
+},{
+  "_id": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "firstName": "Sarah",
+  "lastName": "Ahmed",
+  "email": "demo@sea.com",
+  "password": "$2b$10$07lYDhA6O/T63FUjGl.QhevLTom8pSIxwWDOHp6dejWNA7Zb5cO3W",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Hey, I'm a user acquisition specialist based in Seattle. I love using data to optimize marketing campaigns and drive user growth. With experience in SEO, SEM, and social media marketing, I'm able to execute on multiple channels to achieve marketing goals. When I'm not working, I enjoy playing guitar, hiking, and trying out new food spots in the city.",
+  "cloudinaryId": "i2uqqtnsjirvaanif2la",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681667582/i2uqqtnsjirvaanif2la.webp",
+  "profession": "User Acquisition Specialist",
+  "zipCode": 98101,
+  "radius": 3.5
+},{
+  "_id": {
+    "$oid": "643da191b5f7c00d2e55f310"
+  },
+  "firstName": "Sarah",
+  "lastName": "Murphree",
+  "email": "sm@gmail.com",
+  "password": "$2b$10$Lg1iIA9eeptBNjfpeLg.oela.aBO4GL5Kkpgby6OK80NjFueUjJDS",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -122.336422,
+      47.610902
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "Aspiring software developer with a love for the outdoors. ",
+  "profession": "Software Developer",
+  "radius": 5,
+  "zipCode": 98101,
+  "cloudinaryId": "dbcvqtydeasihlsbvqok",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1681760728/dbcvqtydeasihlsbvqok.jpg"
+},{
+  "_id": {
+    "$oid": "6449afbd5209bf5a235ab6b2"
+  },
+  "firstName": "Nata",
+  "lastName": "Yar",
+  "email": "n.yarysheva@gmail.com",
+  "password": "$2b$10$w6lRlSrrllB4dRIjOUNIjuqnFGWyOHNe2HE.C3KycfKbYxOscPlPq",
+  "location": {
+    "coordinates": []
+  },
+  "interests": {
+    "chingu": false,
+    "networking": false,
+    "mentorship": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": false,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "firstName": "Test",
+  "lastName": "User",
+  "email": "testuser1@somemail.com",
+  "password": "$2b$10$.QU.fXyFMfR67bfAMZXpM.1CcVeR6HEL9XXykkWzjYZ6CYPC1c71e",
+  "location": {},
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "radius": 2.5,
+  "zipCode": null,
+  "bio": "Testing this platform. ",
+  "cloudinaryId": "cnlwuedgcfi50wcssdmo",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1682894407/cnlwuedgcfi50wcssdmo.png"
+},{
+  "_id": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "firstName": "Test",
+  "lastName": "User2",
+  "email": "testuser2@somemail.com",
+  "password": "$2b$10$4CbQ78ebARuyHX0VGCwZueANbqDp8A2Nx8BVXN1v9JBu52CzUBK/.",
+  "location": {},
+  "interests": {
+    "networking": false,
+    "mentorship": false,
+    "chingu": false
+  },
+  "activities": {
+    "virtualCoffee": false,
+    "hiking": false,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "cloudinaryId": "jk7wbx0uzpoklar8fakx",
+  "cloudinaryProfileImgUrl": "https://res.cloudinary.com/dron2ia0b/image/upload/v1682894596/jk7wbx0uzpoklar8fakx.jpg"
+},{
+  "_id": {
+    "$oid": "6451490fb9c0c6260a55852d"
+  },
+  "firstName": "ee",
+  "lastName": "ee",
+  "email": "demo@won.com",
+  "password": "$2b$10$n6qInhtadzJhkbwxGcAbN./VFVeKosYvuHMiQXWUztRQSsICYFRuK",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -103.39134,
+      34.22508
+    ]
+  },
+  "interests": {
+    "networking": true,
+    "mentorship": false,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": false
+  },
+  "photos": [],
+  "__v": 0,
+  "bio": "asdf",
+  "zipCode": 12322
+},{
+  "_id": {
+    "$oid": "64516e8a95ccb77e20d59ace"
+  },
+  "firstName": "Kenny",
+  "lastName": "Tram",
+  "email": "kennyvtram@gmail.com",
+  "password": "$2b$10$cX7Tp3uRL09xAw1IXylEFep1V7TpQm3DzWeXvq4atxfBx7/vJgzFa",
+  "location": {},
+  "interests": {
+    "networking": true,
+    "mentorship": true,
+    "chingu": true
+  },
+  "activities": {
+    "virtualCoffee": true,
+    "hiking": true,
+    "running": true
+  },
+  "photos": [],
+  "__v": 0,
+  "radius": 2,
+  "zipCode": null
+}]

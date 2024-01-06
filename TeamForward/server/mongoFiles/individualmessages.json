@@ -1,0 +1,1541 @@
+[{
+  "_id": {
+    "$oid": "6440939420cac609d1cb3306"
+  },
+  "chatRoomId": {
+    "$oid": "6440936e20cac609d1cb32fe"
+  },
+  "from": {
+    "$oid": "643c2ed1f4d9cbedaac7cbf5"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "Hello, we have mutuals. Would love to connect! ",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-20T01:21:24.750Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:50.860Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6440965fa81b4d13043b3032"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hey birri!",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-20T01:33:19.997Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.220Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6440976ea81b4d13043b3061"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hello",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-20T01:37:50.314Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.152Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64409771a81b4d13043b3063"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "aww",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-20T01:37:53.967Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.165Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6440ab6ca81b4d13043b30b3"
+  },
+  "chatRoomId": {
+    "$oid": "643f572141a40c88bc10e5ed"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "message": "hey",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-20T03:03:08.055Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:46:28.326Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6440ad236f8820685e19d336"
+  },
+  "unread": false,
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "to": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "message": "hello",
+  "createdAt": {
+    "$date": "2023-04-20T03:10:27.639Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T01:13:00.570Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6440b77dffef6d761687e0c5"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hello??",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-20T03:54:37.098Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.315Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a13dffef6d761687e11c"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hello",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T14:44:13.236Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.156Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a327ffef6d761687e159"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hello",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T14:52:23.466Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.297Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a34fffef6d761687e15e"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "asdfa",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T14:53:03.930Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.168Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a3b1ffef6d761687e177"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "test",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T14:54:41.469Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.310Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a3edffef6d761687e191"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "hello",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T14:55:41.030Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T14:55:41.030Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a3efffef6d761687e193"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "hello again",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T14:55:43.518Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T14:55:43.518Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a48db836ec01fe3d25f7"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "asdfasf",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T14:58:21.705Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T14:58:21.705Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a5c2b836ec01fe3d2624"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "asdf",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:03:30.096Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:03:30.096Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a648b836ec01fe3d2641"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "www",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:05:44.954Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:05:44.954Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a687b836ec01fe3d2646"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "fff",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:06:47.854Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:06:47.854Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a68bb836ec01fe3d2648"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "bbb",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:06:51.495Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:06:51.495Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a753b836ec01fe3d2661"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "test?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:10:11.576Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:10:11.576Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a81bb836ec01fe3d2676"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "what?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:13:31.284Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:13:31.284Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a820b836ec01fe3d2678"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "why",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:13:36.834Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:13:36.834Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a97cb836ec01fe3d2695"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "test again",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:19:24.174Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:19:24.174Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a97eb836ec01fe3d2697"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "ok?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:19:26.430Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:19:26.430Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a980b836ec01fe3d2699"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "great",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:19:28.804Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:19:28.804Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a9d8b836ec01fe3d269b"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "now?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:20:56.410Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:20:56.410Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a9dbb836ec01fe3d269d"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "yes I think so!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:20:59.877Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:20:59.877Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442a9e0b836ec01fe3d269f"
+  },
+  "chatRoomId": {
+    "$oid": "6442a3c1ffef6d761687e17e"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2bab9facca04aa08f5cd"
+  },
+  "message": "what about now?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T15:21:04.791Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T15:21:04.791Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442ad1bb836ec01fe3d26bc"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "test again",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T15:34:51.549Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.399Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442b264b836ec01fe3d26be"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "what?",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T15:57:24.668Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.292Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442b2aab836ec01fe3d26c0"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hello?",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T15:58:34.662Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:42.476Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cb4fda7edea6ef548a7c"
+  },
+  "chatRoomId": {
+    "$oid": "6442cb31da7edea6ef548a72"
+  },
+  "from": {
+    "$oid": "643c2ed1f4d9cbedaac7cbf5"
+  },
+  "to": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "message": "Hi Sarah, just wanted to say hi and connect. Possibly meet up for a yoga session?",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:43:43.387Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:58:59.745Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cb9bda7edea6ef548a96"
+  },
+  "chatRoomId": {
+    "$oid": "6442cb78da7edea6ef548a8c"
+  },
+  "from": {
+    "$oid": "643c2ed1f4d9cbedaac7cbf5"
+  },
+  "to": {
+    "$oid": "643c3373f4d9cbedaac7cca7"
+  },
+  "message": "Hey David, it's great to connect with you! Let's meetup during our lunch to get a run in!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T17:44:59.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:44:59.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cbc8da7edea6ef548aaa"
+  },
+  "chatRoomId": {
+    "$oid": "6442cbb3da7edea6ef548aa0"
+  },
+  "from": {
+    "$oid": "643c2ed1f4d9cbedaac7cbf5"
+  },
+  "to": {
+    "$oid": "643b2e009facca04aa08f5fd"
+  },
+  "message": "Hi, just wanted to connect. It's great to see others getting active!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T17:45:44.683Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:45:44.683Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cc03da7edea6ef548ac5"
+  },
+  "chatRoomId": {
+    "$oid": "643f572141a40c88bc10e5ed"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "message": "Hey Andrew, great to connect with you!",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:46:43.886Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T01:13:04.860Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cca3da7edea6ef548b1e"
+  },
+  "chatRoomId": {
+    "$oid": "6442cc6fda7edea6ef548b14"
+  },
+  "from": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "to": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "message": "Hi great to connect with you! Let's get to know eachother and go on a walk on our lunch break! ",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:49:23.182Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:55:40.850Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442ccd5da7edea6ef548b3a"
+  },
+  "chatRoomId": {
+    "$oid": "6442ccc4da7edea6ef548b30"
+  },
+  "from": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "to": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "message": "Hi there Sarah! Great to connect with you !",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:50:13.437Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:59:02.999Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442ce3dda7edea6ef548b72"
+  },
+  "chatRoomId": {
+    "$oid": "6442cc6fda7edea6ef548b14"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "message": "It's great to connect! A walk sounds like an awesome idea! Does 1pm sound okay? ",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:56:13.214Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:56:52.099Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442ce7fda7edea6ef548b8d"
+  },
+  "chatRoomId": {
+    "$oid": "6442cc6fda7edea6ef548b14"
+  },
+  "from": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "to": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "message": "Yes that would be awesome! I'll see you then!",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:57:19.612Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T17:11:52.766Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442ceb6da7edea6ef548ba3"
+  },
+  "chatRoomId": {
+    "$oid": "6442cea0da7edea6ef548b99"
+  },
+  "from": {
+    "$oid": "643b2e009facca04aa08f5fd"
+  },
+  "to": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "message": "Hey Girl! How do you feel about hiking this weekend? ",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:58:14.226Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T17:02:23.978Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cedcda7edea6ef548bb7"
+  },
+  "chatRoomId": {
+    "$oid": "6442cec6da7edea6ef548bad"
+  },
+  "from": {
+    "$oid": "643b2e009facca04aa08f5fd"
+  },
+  "to": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "message": "Hey Girl! Hope all is well, lets go on a hike this weekend if you're free. Let me know!",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-21T17:58:52.108Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:58:51.564Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cf06bad0ef1136e804ad"
+  },
+  "chatRoomId": {
+    "$oid": "6442cf03bad0ef1136e804a8"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "message": "Hey Michael!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T17:59:34.725Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:59:34.725Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6442cf0abad0ef1136e804af"
+  },
+  "chatRoomId": {
+    "$oid": "6442cf03bad0ef1136e804a8"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "message": "What's up?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-21T17:59:38.333Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T17:59:38.333Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6443328b138a585ba8dbc591"
+  },
+  "chatRoomId": {
+    "$oid": "64433288138a585ba8dbc58b"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2ccb9facca04aa08f5e5"
+  },
+  "message": "hello",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T01:04:11.846Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T01:04:11.846Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433471b831a9550faa13a8"
+  },
+  "chatRoomId": {
+    "$oid": "64433288138a585ba8dbc58b"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2ccb9facca04aa08f5e5"
+  },
+  "message": "CHECKING",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T01:12:17.013Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T01:12:17.013Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433485b831a9550faa13b1"
+  },
+  "chatRoomId": {
+    "$oid": "64433288138a585ba8dbc58b"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2ccb9facca04aa08f5e5"
+  },
+  "message": "??",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T01:12:37.089Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T01:12:37.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6444067972b514d9c1750aa0"
+  },
+  "chatRoomId": {
+    "$oid": "6442cf03bad0ef1136e804a8"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "message": "working?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T16:08:25.698Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T16:08:25.698Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644410df3221f23fbfdc30b4"
+  },
+  "chatRoomId": {
+    "$oid": "6442cb31da7edea6ef548a72"
+  },
+  "from": {
+    "$oid": "643c2ed1f4d9cbedaac7cbf5"
+  },
+  "to": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "message": "Get back to me when you can.",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-22T16:52:47.438Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:58:59.697Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644413043221f23fbfdc30ef"
+  },
+  "chatRoomId": {
+    "$oid": "644412fc3221f23fbfdc30e9"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643b2f649facca04aa08f615"
+  },
+  "message": "Hi how are you?",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T17:01:56.508Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T17:01:56.508Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6444131f3221f23fbfdc310f"
+  },
+  "chatRoomId": {
+    "$oid": "6442cea0da7edea6ef548b99"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643b2e009facca04aa08f5fd"
+  },
+  "message": "Yes lets do it!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T17:02:23.601Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T17:02:23.601Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644415583221f23fbfdc3134"
+  },
+  "chatRoomId": {
+    "$oid": "6442cc6fda7edea6ef548b14"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643b2c519facca04aa08f5d9"
+  },
+  "message": "lets do it then!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T17:11:52.510Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T17:11:52.510Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6444156b3221f23fbfdc3149"
+  },
+  "chatRoomId": {
+    "$oid": "6442cea0da7edea6ef548b99"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643b2e009facca04aa08f5fd"
+  },
+  "message": "hi",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-22T17:12:11.870Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T17:12:11.870Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6444988d950c474cd7375a52"
+  },
+  "chatRoomId": {
+    "$oid": "6440965ca81b4d13043b302a"
+  },
+  "from": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "to": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "message": "thats awesome",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-23T02:31:41.890Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-23T02:31:41.890Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6445b9a8d5d7b4e0ad57b996"
+  },
+  "chatRoomId": {
+    "$oid": "643f337924652490514507cd"
+  },
+  "from": {
+    "$oid": "643da191b5f7c00d2e55f310"
+  },
+  "to": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "message": "hi",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-23T23:05:12.329Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:58:55.773Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6445b9b1d5d7b4e0ad57b999"
+  },
+  "chatRoomId": {
+    "$oid": "643f337924652490514507cd"
+  },
+  "from": {
+    "$oid": "643da191b5f7c00d2e55f310"
+  },
+  "to": {
+    "$oid": "643c353bf4d9cbedaac7ccf4"
+  },
+  "message": "test",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-23T23:05:21.655Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:58:55.795Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6447232ba747e766409727c0"
+  },
+  "chatRoomId": {
+    "$oid": "64433288138a585ba8dbc58b"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2ccb9facca04aa08f5e5"
+  },
+  "message": "brian hit me back",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-25T00:47:39.500Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-25T00:47:39.500Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644b3806723c0d6d07f88999"
+  },
+  "chatRoomId": {
+    "$oid": "644b3801723c0d6d07f88993"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b30899facca04aa08f636"
+  },
+  "message": "hey Olivia!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-28T03:05:42.071Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-28T03:05:42.071Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644b396a723c0d6d07f889ae"
+  },
+  "chatRoomId": {
+    "$oid": "644b3965723c0d6d07f889a8"
+  },
+  "from": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "to": {
+    "$oid": "643b2f649facca04aa08f615"
+  },
+  "message": "hey!",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-28T03:11:38.168Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-28T03:11:38.168Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644eee06baf145e4683555d8"
+  },
+  "chatRoomId": {
+    "$oid": "644eeddfbaf145e4683555d2"
+  },
+  "from": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "to": {
+    "$oid": "643773ccd9c24474ecad720d"
+  },
+  "message": "Testing this app I'm about to help further develop",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-04-30T22:39:02.222Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:39:02.222Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644eef58baf145e468355617"
+  },
+  "chatRoomId": {
+    "$oid": "644eef0bbaf145e4683555ff"
+  },
+  "from": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "to": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "message": "Test User, this is Test User2. Come-in Test User. Over",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-30T22:44:40.517Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:53:38.267Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644eefaabaf145e468355628"
+  },
+  "chatRoomId": {
+    "$oid": "644eef0bbaf145e4683555ff"
+  },
+  "from": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "to": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "message": "Affirmative Test USer2, Over ",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-30T22:46:02.513Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:56:07.013Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644ef15ebaf145e46835562e"
+  },
+  "chatRoomId": {
+    "$oid": "644eef0bbaf145e4683555ff"
+  },
+  "from": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "to": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "message": "good day",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-30T22:53:18.681Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:53:38.294Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644ef167baf145e468355636"
+  },
+  "chatRoomId": {
+    "$oid": "644eef0bbaf145e4683555ff"
+  },
+  "from": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "to": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "message": "excellent ",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-30T22:53:27.385Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:56:06.994Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644ef172baf145e468355640"
+  },
+  "chatRoomId": {
+    "$oid": "644eef0bbaf145e4683555ff"
+  },
+  "from": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "to": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "message": "i said gooday!",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-30T22:53:38.076Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:53:38.284Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644ef206baf145e468355651"
+  },
+  "chatRoomId": {
+    "$oid": "644eef0bbaf145e4683555ff"
+  },
+  "from": {
+    "$oid": "644eeccfbaf145e46835559a"
+  },
+  "to": {
+    "$oid": "644eeebdbaf145e4683555ee"
+  },
+  "message": "bla!",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-04-30T22:56:06.552Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-30T22:56:06.999Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64513c5cc71c41923c161504"
+  },
+  "chatRoomId": {
+    "$oid": "64513c4fc71c41923c1614fe"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "Testing",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-05-02T16:37:48.331Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T16:37:48.331Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645148eeb9c0c6260a55851c"
+  },
+  "chatRoomId": {
+    "$oid": "64513c4fc71c41923c1614fe"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "asdfdfs",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-05-02T17:31:26.969Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T17:31:26.969Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645148f1b9c0c6260a558520"
+  },
+  "chatRoomId": {
+    "$oid": "64513c4fc71c41923c1614fe"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "werwer",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-05-02T17:31:29.940Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T17:31:29.940Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6451492cb9c0c6260a558542"
+  },
+  "chatRoomId": {
+    "$oid": "64514929b9c0c6260a55853c"
+  },
+  "from": {
+    "$oid": "6451490fb9c0c6260a55852d"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "wqw",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-05-02T17:32:28.746Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T17:32:28.746Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64514940b9c0c6260a558551"
+  },
+  "chatRoomId": {
+    "$oid": "6451493eb9c0c6260a55854b"
+  },
+  "from": {
+    "$oid": "6451490fb9c0c6260a55852d"
+  },
+  "to": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "message": "ytyty",
+  "unread": false,
+  "createdAt": {
+    "$date": "2023-05-02T17:32:48.697Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T17:33:46.211Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64515cb14fba347912c8b7a6"
+  },
+  "chatRoomId": {
+    "$oid": "64513c4fc71c41923c1614fe"
+  },
+  "from": {
+    "$oid": "643b296e9facca04aa08f5c1"
+  },
+  "to": {
+    "$oid": "643857c53d2ce3adfcd3ac09"
+  },
+  "message": "hi three",
+  "unread": true,
+  "createdAt": {
+    "$date": "2023-05-02T18:55:45.559Z"
+  },
+  "updatedAt": {
+    "$date": "2023-05-02T18:55:45.559Z"
+  },
+  "__v": 0
+}]
