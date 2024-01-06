@@ -31,7 +31,7 @@ app.use((req, res, next) => {
   next();
 });
 
-require("./Config/mongoose.config");
+require("./config/mongoose.config");
 require("./routes/teamForward.routes")(app);
 
 const server = app.listen(port, () => console.log(`listening on port: ${port}`));

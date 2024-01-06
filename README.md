@@ -83,7 +83,7 @@ Team Forward allows users to:
  
 #### 1. Clone project locally:
 ```javascript
-git clone https://github.com/chingu-voyages/v43-tier3-team-39.git
+git clone https://github.com/smurph7894/TeamForwardProject.git
 ```
 #### 2. Run Client:
 ```javascript
