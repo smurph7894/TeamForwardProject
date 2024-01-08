@@ -1,10 +1,10 @@
-const User = require("../Models/User");
+const User = require("../models/User");
 const log = require("../helpers/logging");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const locationHelpers = require("../helpers/locationHelpers");
-const cloudinary = require("../Config/cloudinary");
+const cloudinary = require("../config/cloudinary");
 
 module.exports = {
   createNewUser: (req, res) => {
