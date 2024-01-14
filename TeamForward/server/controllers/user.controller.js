@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const locationHelpers = require("../helpers/locationHelpers");
-const cloudinary = require("../config/cloudinary");
+const fileparser = require('./fileparser');
 
 module.exports = {
   createNewUser: (req, res) => {
