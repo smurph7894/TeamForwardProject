@@ -6,9 +6,11 @@ const session = require("express-session");
 const log = require("./helpers/logging");
 // const passport = require("passport");
 const app = express();
-const socketio = require('socket.io')
+const socketio = require('socket.io');
 const port = process.env.PORTKEY;
-const ChatController = require("./controllers/messages.controller")
+const ChatController = require("./controllers/messages.controller");
+const AWS = require('aws-sdk');
+AWS.config.update({region: `${process.env.S3_REGION}`});
 
 // configure Passport
 // require("./Config/passport");

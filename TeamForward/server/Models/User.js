@@ -37,10 +37,10 @@ const UserSchema = new mongoose.Schema({
   photos: {
     type: [Photo.schema],
   },
-  cloudinaryProfileImgUrl: {
+  s3ProfileImgUrl: {
     type: String,
   },
-  cloudinaryId: {
+  s3Id: {
     type: String,
   },
   profession: {
