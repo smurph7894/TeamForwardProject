@@ -37,10 +37,7 @@ const UserSchema = new mongoose.Schema({
   photos: {
     type: [Photo.schema],
   },
-  s3ProfileImgUrl: {
-    type: String,
-  },
-  s3Id: {
+  s3ProfilePhotoKey: {
     type: String,
   },
   profession: {
