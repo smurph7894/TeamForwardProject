@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const locationHelpers = require("../helpers/locationHelpers");
-const fileparser = require('./fileparser');
+const {addSinglePhoto, getPhoto, getAllPhotos, updatePhoto, deleteAPhoto } = require("./s3.controller")
+const request = require('request');
+const teamForwardRoutes = require("../routes/teamForward.routes");
 
 module.exports = {
   createNewUser: (req, res) => {
@@ -100,33 +102,7 @@ module.exports = {
   updateUser: async (req, res) => {
     let body = { ...req.body };
 
-    log("FIRST LOG HERE REQ.BODY:",body, "FIRST LOG REQ.PARAMS",req.params);
-    if (body.photo) {
-      //if there's an existing cloudinaryProfileImgUrl/cloudinaryId, then delete it from cloudinary
-      let userPhoto = await User.findById({_id: req.params.id });
-
-      try {
-        await cloudinary.uploader.destroy(userPhoto.cloudinaryId);
-      } catch (exception) {
-        console.log("Something went wrong with updateUser", exception);
-      }
-
-      let result;
-      try {
-        result = await cloudinary.uploader.upload(body.photo);
-        const { secure_url, public_id } = result;
-
-        body.cloudinaryProfileImgUrl = secure_url;
-        body.cloudinaryId = public_id;
-
-        delete body.photo;
-      } catch (exception) {
-        res.status(400).json(exception);
-        log("Something went wrong with cloudinary upload");
-      }
-    }
-
-    
+    log("FIRST LOG HERE REQ.BODY:",body, "FIRST LOG REQ.PARAMS",req.params);   
     if(body.zipCode){
       const address = body.zipCode;
       const locationData = await locationHelpers.getLocationHelper(address);
