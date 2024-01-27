@@ -2,6 +2,10 @@ const UserController = require("../controllers/user.controller");
 const LocationController = require("../controllers/location.controller");
 const MessagingController = require("../controllers/messages.controller");
 const { authenticate } = require("../config/jwt.config");
+const { addSinglePhoto, updatePhoto, getAllPhotos, getPhoto, deleteAPhoto } = require("../controllers/s3.controller");
+const multer = require("multer");
+
+const upload = multer({dest: `uploads/`});
 
 module.exports = (app) => {
   //anonymous routes
@@ -28,4 +32,11 @@ module.exports = (app) => {
   app.put("/messaging/message/:messageId/update", authenticate, MessagingController.updateMessage);
   app.delete("/messaging/chatRoom/:chatRoomId/delete", authenticate, MessagingController.deleteChat);
   app.delete("/messaging/chatRoom/message/:messageId/delete", authenticate, MessagingController.deleteMessage);
+
+  //Photo
+  app.post('/photo', [authenticate, upload.single('photo')], addSinglePhoto);
+  app.get('/photo/:photoKey', authenticate, getPhoto);
+  app.get('/photo/allPhotos', authenticate, getAllPhotos);
+  app.put('/photo/:photoKey/update', [authenticate, upload.single('photo')], updatePhoto);
+  app.delete('/photo/:photoKey', authenticate, deleteAPhoto);
 };
