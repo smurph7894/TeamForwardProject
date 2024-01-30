@@ -4,9 +4,6 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const locationHelpers = require("../helpers/locationHelpers");
-const {addSinglePhoto, getPhoto, getAllPhotos, updatePhoto, deleteAPhoto } = require("./s3.controller")
-const request = require('request');
-const teamForwardRoutes = require("../routes/teamForward.routes");
 
 module.exports = {
   createNewUser: (req, res) => {
@@ -102,7 +99,8 @@ module.exports = {
   updateUser: async (req, res) => {
     let body = { ...req.body };
 
-    log("FIRST LOG HERE REQ.BODY:",body, "FIRST LOG REQ.PARAMS",req.params);   
+    log("FIRST LOG HERE REQ.BODY:",body, "FIRST LOG REQ.PARAMS",req.params);
+
     if(body.zipCode){
       const address = body.zipCode;
       const locationData = await locationHelpers.getLocationHelper(address);

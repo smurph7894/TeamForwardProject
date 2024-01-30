@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import SignUpWEmail from "../components/SignUpAndSignInPopUps/SignUpWEmail";
 import { userState } from "../GlobalState";
-import { Link, Navigate, useNavigate } from "react-router-dom";
-import BasicButtonStyling from "../components/Button/BasicButtonStyling";
+import { Navigate, useNavigate } from "react-router-dom";
+
 
 const SignUp = () => {
   const [emailSignUpForm, setEmailSignUpForm] = useState(false);
   const navigate = useNavigate();
-  const user = userState();
 
   const google = async () => {
     await window.open(process.env.REACT_APP_WINDOWKEY, "_self");

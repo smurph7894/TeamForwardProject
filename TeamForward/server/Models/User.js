@@ -34,9 +34,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
   },
   // add photo model to save profile photo info
-  photos: {
-    type: [Photo.schema],
-  },
   s3ProfilePhotoKey: {
     type: String,
   },

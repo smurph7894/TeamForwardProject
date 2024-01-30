@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useReactiveVar } from "@apollo/client";
-import { userState } from "./GlobalState";
+import { userState, profilePictureState } from "./GlobalState";
 import log from "./helpers/logging";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -22,6 +22,7 @@ axios.defaults.withCredentials = true;
 
 const ProtectedRoute = ({ children }) => {
   const user = useReactiveVar(userState);
+  const profilePicture = useReactiveVar(profilePictureState);
 
   if (!user) {
     return <Navigate to="/signin" />;
@@ -47,6 +48,16 @@ function App() {
           log(err);
           setApiComplete(true);
         });
+        if(user?.s3ProfilePhotoKey){
+          axios
+            .get(`${process.env.REACT_APP_BE_URL}'/photo/${user.s3ProfilePhotoKey}`)
+            .then((res) => {
+              profilePictureState(res.data);
+            })
+            .catch((err) => {
+              log(err, 'retrieving profile picture unsuccessful');
+            });
+        }
     }
   }, [user]);
 
