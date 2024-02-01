@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useReactiveVar } from "@apollo/client";
-import { userState, profilePictureState } from "./GlobalState";
+import { userState, profilePictureState, setProfilePictureState } from "./GlobalState";
 import log from "./helpers/logging";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -48,17 +48,20 @@ function App() {
           log(err);
           setApiComplete(true);
         });
-        if(user?.s3ProfilePhotoKey){
-          axios
-            .get(`${process.env.REACT_APP_BE_URL}'/photos/${user.s3ProfilePhotoKey}`)
-            .then((res) => {
-              profilePictureState(res.data);
-            })
-            .catch((err) => {
-              log(err, 'retrieving profile picture unsuccessful');
-            });
-        }
-    }
+      }
+
+      if(user?.s3ProfilePhotoKey){
+        axios
+          .get(`${process.env.REACT_APP_BE_URL}/photos/${user.s3ProfilePhotoKey}/getphoto`, {responseType: 'blob'})
+          .then((res) => {
+            console.log(res);
+            setProfilePictureState(res.data);
+          })
+          .catch ( (err) => {
+            console.log(err)
+          })
+      };
+
   }, [user]);
 
 

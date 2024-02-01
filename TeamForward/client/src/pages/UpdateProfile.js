@@ -2,11 +2,10 @@ import { useState,  } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useReactiveVar } from "@apollo/client";
-import { userState, profilePictureState } from "../GlobalState";
+import { userState, profilePictureState, setProfilePictureState } from "../GlobalState";
 import log from "../helpers/logging";
 import ProfileForm from "../components/UpdateProfilePage/ProfileForm";
 import NavMenu from "../components/NavMenu/NavMenu";
-import { TransformProfileImgToUrl } from "../helpers/TransformProfileImgUrl";
 
 const UpdateProfile = () => {
   const navigate = useNavigate();
@@ -20,6 +19,7 @@ const UpdateProfile = () => {
     profilePicture ? profilePicture : null
   );
 
+  console.log("updateProfile UserState", user)
   const [formInfo, setFormInfo] = useState({
     firstName: user.firstName,
     lastName: user.lastName,
@@ -107,6 +107,7 @@ const UpdateProfile = () => {
   }
 
   const updateProfile = async (form) => {
+    console.log("form", form)
     const payload = {
       firstName: form.firstName,
       lastName: form.lastName,
@@ -125,23 +126,25 @@ const UpdateProfile = () => {
         running: form.activities.Running,
       },
     };
-
-    console.log("user.s3ProfilePhotoKey", user.s3ProfilePhotoKey)
-    const body = {photoKey: user.s3ProfilePhotoKey}
     
+    let photoKey;
+
     try{
       const response = await axios
         .put(`${process.env.REACT_APP_BE_URL}/teamForward/${user._id}`, payload)
-      userState(response);
+      userState(response.data);
+      console.log("user.s3ProfilePhotoKey", response.data.s3ProfilePhotoKey)
+      photoKey = response.data.s3ProfilePhotoKey;
       } catch (error) {
         console.log(error)
       }
 
+
     try{
       const response = await axios
-        .get(`${process.env.REACT_APP_BE_URL}/photos/getphoto`, body)
+        .get(`${process.env.REACT_APP_BE_URL}/photos/${photoKey}/getphoto`, {responseType: 'blob'});
       console.log(response)
-      profilePictureState(response);
+      setProfilePictureState(response.data);
     } catch (error) {
       console.log(error)
     }

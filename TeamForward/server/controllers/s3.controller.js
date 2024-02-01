@@ -2,53 +2,61 @@ const {addPhoto, onePhoto, listAllPhotos, deletePhoto } = require("../client/s3C
 const Photo = require("../models/Photo");
 const fileSystem = require('fs');
 const User = require("../models/User");
+const { Readable } = require('stream');
 
 module.exports = {
     addSinglePhoto: async (req, res) => {
+        console.log("server req", req);
         const file = req.file;
         const destinationKey = `photos/${file.originalname}`;
         const body = fileSystem.createReadStream(file.path)
 
         try {
           await addPhoto(destinationKey, body);
-          res.json({photoKey: file.originalname});
+            console.log("add photo to s3 successful")
         } catch (error) {
-          res.status(500).send(error.message);
+            console.error("create s3 photo failed", error)
+            res.status(500).send(error.message);
           return;
         }
 
         try {
             await Photo.create({
                 photoKey: `${file.originalname}`,
-                userId: req.userId
+                userId: req.params.userId
             })
-            res.json("photoKey added to mongo photos db")
+            console.log("photo created in db")
         } catch (error) {
-            (error) => res.status(404).send(error.message)
+            console.error("create photo in db failed", error)
+            res.status(404).send(error.message)
+            return;
         }
 
         try{
             await User.updateOne(
-                {_id: req.userId},
+                {_id: req.params.userId},
                 {$set: {s3ProfilePhotoKey: `${file.originalname}`}},
             )
-            res.json("photoKey added to user")
+            console.log("photokey added to user")
+            res.json({photoKey: file.originalname});
         }catch (error) {
-            (error) => res.status(404).send(error.message)
+            console.error("add photokey to user failed", error)
+            res.status(404).send(error.message)
+            return;
         }
     },
 
     getPhoto: async (req, res) => {
         console.log("server, req", req)
-        const photoKey = req.photoKey;
+        const photoKey = req.params.photoKeyId;
 
         console.log("server, photokey", photoKey)
 
         try {
             const data = await onePhoto(`photos/${photoKey}`);
+            console.log("data", data)
             res.setHeader('Content-Type', data.ContentType);
-            res.send(data.Body);
-            console.log("data.body server", data.Body);
+            data.Body.pipe(res);
         } catch (error) {
             res.status(404).send(error.message); 
         }
@@ -84,7 +92,7 @@ module.exports = {
             await Photo.deleteOne({photoKey: `${originalPhotoKey}`})
             res.json("photoKey deleted from mongo photos collection")
         } catch (error) {
-            (err) => res.status(404).send(error.message)
+            res.status(404).send(error.message)
         }
     },
 
@@ -102,7 +110,7 @@ module.exports = {
             await Photo.deleteOne({photoKey: `${originalPhotoKey}`})
             res.json("photoKey deleted from mongo photos collection")
         } catch (error) {
-            (err) => res.status(404).send(error.message)
+            res.status(404).send(error.message)
         }
     },
 

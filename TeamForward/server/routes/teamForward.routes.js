@@ -35,7 +35,7 @@ module.exports = (app) => {
 
   //Photo
   app.post('/user/:userId/photo', [authenticate, upload.single('photo')], addSinglePhoto);
-  app.get('/photos/getphoto', authenticate, getPhoto);
+  app.get('/photos/:photoKeyId/getphoto', authenticate, getPhoto);
   app.get('/photos/allPhotos', authenticate, getAllPhotos);
   app.put('/user/:userId/photos/:photoKey/update', [authenticate, upload.single('photo')], updatePhoto);
   app.delete('/photos/delete', authenticate, deleteAPhoto);
