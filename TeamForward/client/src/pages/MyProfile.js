@@ -20,7 +20,7 @@ const MyProfile = ({}) => {
     profession: user ? user.profession : "",
     zipCode: user ? user.zipCode : "",
     radius: user ? user.radius : "",
-    cloudinaryProfileImgUrl: user ? user.cloudinaryProfileImgUrl : "",
+    s3ProfilePhotoKey: user ? user.s3ProfilePhotoKey : "",
     interests: user ? user.interests : "",
     activities: user ? user.activities : "",
   });

@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useReactiveVar } from '@apollo/client';
-import { userState } from "../../GlobalState";
+import { userState, profilePictureState } from "../../GlobalState";
 
 const NavMenu = () => {
     const user = useReactiveVar(userState);
+    const profilePicture = useReactiveVar(profilePictureState);
     const navigate = useNavigate();
     const [open,setOpen] = useState(false);
     const [unreadCount, setUnreadCount] = useState();
@@ -41,10 +42,12 @@ const NavMenu = () => {
         return null;
     }
 
+    console.log(profilePicture)
+
     return (
     <div className="p-2 inline-block h-2/3">
         <button onClick={dropDown}>
-            <img src={user.cloudinaryProfileImgUrl} alt="coverImage" className="object-cover w-20 h-20 rounded-full" />
+            <img src={profilePicture} alt="coverImage" className="object-cover w-20 h-20 rounded-full" />
         </button> 
         {displayNotifications(unreadCount)}
         {
