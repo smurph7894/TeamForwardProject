@@ -34,9 +34,9 @@ module.exports = (app) => {
   app.delete("/messaging/chatRoom/message/:messageId/delete", authenticate, MessagingController.deleteMessage);
 
   //Photo
-  app.post('user/:userId/photo', [authenticate, upload.single('photo')], addSinglePhoto);
-  app.get('/photo/:photoKey', authenticate, getPhoto);
-  app.get('/photo/allPhotos', authenticate, getAllPhotos);
-  app.put('user/:userId/photo/:photoKey/update', [authenticate, upload.single('photo')], updatePhoto);
-  app.delete('/photo/:photoKey', authenticate, deleteAPhoto);
+  app.post('/user/:userId/photo', [authenticate, upload.single('photo')], addSinglePhoto);
+  app.get('/photos/getphoto', authenticate, getPhoto);
+  app.get('/photos/allPhotos', authenticate, getAllPhotos);
+  app.put('/user/:userId/photos/:photoKey/update', [authenticate, upload.single('photo')], updatePhoto);
+  app.delete('/photos/delete', authenticate, deleteAPhoto);
 };

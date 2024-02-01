@@ -50,7 +50,7 @@ function App() {
         });
         if(user?.s3ProfilePhotoKey){
           axios
-            .get(`${process.env.REACT_APP_BE_URL}'/photo/${user.s3ProfilePhotoKey}`)
+            .get(`${process.env.REACT_APP_BE_URL}'/photos/${user.s3ProfilePhotoKey}`)
             .then((res) => {
               profilePictureState(res.data);
             })

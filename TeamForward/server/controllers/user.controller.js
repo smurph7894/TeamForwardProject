@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const locationHelpers = require("../helpers/locationHelpers");
+const {deleteAPhoto} = require('../controllers/s3.controller')
 
 module.exports = {
   createNewUser: (req, res) => {
@@ -155,6 +156,14 @@ module.exports = {
   },
 
   deleteUser: (req, res) => {
+    let user;
+    User.findOne({ _id: req.params.id })
+      .then((response) => {
+        user = res.json(response)
+      }).catch ((err)=>{
+        console.log("user not found")
+      })
+
     User.deleteOne({ _id: req.params.id })
       .then((deletedUser) => {
         log(deletedUser);
@@ -167,5 +176,11 @@ module.exports = {
         });
         log("deleteUser failed");
       });
+
+    req = {
+      ...req,
+      photoKey: user.s3ProfilePhotoKey,
+    }
+    deleteAPhoto(req)
   },
 };

@@ -11,11 +11,13 @@ export default function ProfileForm({
   handleSubmit,
   profileImg,
   setProfileImg,
+  imgFile,
+  setImgFile,
 }) {
   const user = useReactiveVar(userState);
 
   const formUnfinishedNotification = (formInfo, profileImg) => {
-    if(!formInfo.firstName || !formInfo.lastName || ! formInfo.bio || !formInfo.profession || !formInfo.zipCode || !formInfo.radius || !profileImg){
+    if(!formInfo.firstName || !formInfo.lastName || ! formInfo.bio || !formInfo.profession || !formInfo.zipCode || !formInfo.radius || !profileImg || !imgFile){
       return false;
     }
     return true;    
@@ -36,6 +38,8 @@ export default function ProfileForm({
         <UploadProfileImg
           profileImg={profileImg}
           setProfileImg={setProfileImg}
+          imgFile={imgFile}
+          setImgFile={setImgFile}
         />
         <form onSubmit={handleSubmit}>
           <div className="grid gap-4 mb-4 sm:grid-cols-2 sm:gap-6 sm:mb-5">
