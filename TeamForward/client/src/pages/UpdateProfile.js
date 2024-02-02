@@ -65,7 +65,7 @@ const UpdateProfile = () => {
   };
 
   const uploadProfilePicture = async(imgFile) => {
-    if(!user.s3ProfilePhotoKey){
+    if(!user.s3ProfilePhotoKey && imgFile){
       const photoData = new FormData();
       photoData.append('photo', imgFile);
       console.log("update profile, post call - no userprofileKey ")

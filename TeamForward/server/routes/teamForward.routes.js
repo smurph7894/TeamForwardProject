@@ -2,7 +2,7 @@ const UserController = require("../controllers/user.controller");
 const LocationController = require("../controllers/location.controller");
 const MessagingController = require("../controllers/messages.controller");
 const { authenticate } = require("../config/jwt.config");
-const { addSinglePhoto, updatePhoto, getAllPhotos, getPhoto, deleteAPhoto } = require("../controllers/s3.controller");
+const { addSinglePhoto, updatePhoto, getPhoto, deleteAPhoto } = require("../controllers/s3.controller");
 const multer = require("multer");
 
 const upload = multer({dest: `uploads/`});
@@ -36,7 +36,6 @@ module.exports = (app) => {
   //Photo
   app.post('/user/:userId/photo', [authenticate, upload.single('photo')], addSinglePhoto);
   app.get('/photos/:photoKeyId/getphoto', authenticate, getPhoto);
-  app.get('/photos/allPhotos', authenticate, getAllPhotos);
   app.put('/user/:userId/photos/:photoKey/update', [authenticate, upload.single('photo')], updatePhoto);
   app.delete('/photos/delete', authenticate, deleteAPhoto);
 };

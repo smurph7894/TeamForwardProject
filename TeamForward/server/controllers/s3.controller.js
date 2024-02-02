@@ -49,16 +49,6 @@ module.exports = {
         }
     },
 
-    getAllPhotos: async (req, res) => {
-        try {
-            const result = await listAllPhotos();
-            const photos = result.Contents.map(photo => photo.Key);
-            return photos;
-        } catch(error) {
-            res.status(500).send(error.message);
-        }
-    },
-
     updatePhoto: async (req, res) => {
         const originalPhotoKey = req.params.photoKey;
         
