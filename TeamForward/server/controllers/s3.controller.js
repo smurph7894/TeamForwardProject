@@ -1,5 +1,4 @@
 const {addPhoto, onePhoto, listAllPhotos, deletePhoto } = require("../client/s3Client");
-const Photo = require("../models/Photo");
 const fileSystem = require('fs');
 const User = require("../models/User");
 const { Readable } = require('stream');
@@ -18,18 +17,6 @@ module.exports = {
             console.error("create s3 photo failed", error)
             res.status(500).send(error.message);
           return;
-        }
-
-        try {
-            await Photo.create({
-                photoKey: `${file.originalname}`,
-                userId: req.params.userId
-            })
-            console.log("photo created in db")
-        } catch (error) {
-            console.error("create photo in db failed", error)
-            res.status(404).send(error.message)
-            return;
         }
 
         try{
@@ -87,13 +74,6 @@ module.exports = {
         } catch (error) {
             res.status(500).send(error.message);
         }
-
-        try {
-            await Photo.deleteOne({photoKey: `${originalPhotoKey}`})
-            res.json("photoKey deleted from mongo photos collection")
-        } catch (error) {
-            res.status(404).send(error.message)
-        }
     },
 
     deleteAPhoto: async (req, res) => {
@@ -104,13 +84,6 @@ module.exports = {
             res.send('Photos deleted from S3 bucket.')
         } catch (error) {
             res.status(500).send(error.message);
-        }
-
-        try {
-            await Photo.deleteOne({photoKey: `${originalPhotoKey}`})
-            res.json("photoKey deleted from mongo photos collection")
-        } catch (error) {
-            res.status(404).send(error.message)
         }
     },
 

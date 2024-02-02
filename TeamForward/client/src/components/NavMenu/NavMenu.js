@@ -42,8 +42,6 @@ const NavMenu = () => {
         return null;
     }
 
-    console.log("profile pic - Nav", profilePicture)
-
     return (
     <div className="p-2 inline-block h-2/3">
         <button onClick={dropDown}>

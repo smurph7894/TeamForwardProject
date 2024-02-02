@@ -1,4 +1,3 @@
-const Photo = require("./Photo");
 const GeoJSON = require("mongoose-geojson-schema");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { profilePictureState, userState } from "../../GlobalState";
+import { useState } from "react";
+import { userState } from "../../GlobalState";
 import { useReactiveVar } from "@apollo/client";
 
 

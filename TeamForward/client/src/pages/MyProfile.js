@@ -2,7 +2,6 @@ import { useState } from "react";
 import Profile from "../components/ProfilePage/Profile";
 import { userState } from "../GlobalState";
 import log from "../helpers/logging";
-import ConnectButton from "../components/Button/ConnectButton";
 import { useReactiveVar } from "@apollo/client";
 
 

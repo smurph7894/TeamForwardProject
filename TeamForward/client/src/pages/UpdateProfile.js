@@ -68,7 +68,7 @@ const UpdateProfile = () => {
     if(!user.s3ProfilePhotoKey){
       const photoData = new FormData();
       photoData.append('photo', imgFile);
-
+      console.log("update profile, post call - no userprofileKey ")
       try{
         const response = await axios
           .post(`${process.env.REACT_APP_BE_URL}/user/${user._id}/photo`, photoData, {
@@ -85,6 +85,7 @@ const UpdateProfile = () => {
         console.log(error)
       }
     } else {
+      console.log("update profile, update call, has key ")
       const photoData = new FormData();
       photoData.append('photo', imgFile);
 
@@ -141,6 +142,7 @@ const UpdateProfile = () => {
 
 
     try{
+      console.log("getting photo")
       const response = await axios
         .get(`${process.env.REACT_APP_BE_URL}/photos/${photoKey}/getphoto`, {responseType: 'blob'});
       console.log(response)

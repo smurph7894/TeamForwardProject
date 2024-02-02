@@ -13,11 +13,10 @@ import MyProfile from "./pages/MyProfile"
 import UserProfile from "./pages/UserProfile";
 import Inbox from "./pages/Inbox"
 import Chat from "./components/Messages/Chat"
-
 import {io} from 'socket.io-client'
+import blankProfileImg from "../src/assets/home/blank-profile.png"
 
 const socket = io(process.env.REACT_APP_BE_URL)
-
 axios.defaults.withCredentials = true;
 
 const ProtectedRoute = ({ children }) => {
@@ -27,7 +26,6 @@ const ProtectedRoute = ({ children }) => {
   if (!user) {
     return <Navigate to="/signin" />;
   }
-
   return children;
 };
 
@@ -60,25 +58,14 @@ function App() {
           .catch ( (err) => {
             console.log(err)
           })
-      };
-
+      } else {
+        profilePictureState(blankProfileImg)
+      }
   }, [user]);
-
-
-  // Socket.on("message",()=>{
-  //   axios.get(`${REACT_APP_BE_URL}/messaging/user/message/unreadCount`)
-  // //   .then((res)=>{
-
-  // //   }).catch((err)=>{
-  // //     console.log(err)
-  // //   })
-  // })
-
 
   if (!apiComplete) {
     return null;
   }
-
 
   return (
     <BrowserRouter>
@@ -97,7 +84,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/updateprofile"
           element={
@@ -114,7 +100,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-        
         <Route
           path="/userProfile/:id"
           element={
