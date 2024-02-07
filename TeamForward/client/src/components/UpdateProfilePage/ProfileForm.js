@@ -17,7 +17,7 @@ export default function ProfileForm({
   const user = useReactiveVar(userState);
 
   const formUnfinishedNotification = (formInfo, profileImg, imgFile) => {
-    if(!formInfo.firstName || !formInfo.lastName || ! formInfo.bio || !formInfo.profession || !formInfo.zipCode || !formInfo.radius || !profileImg || !imgFile){
+    if(!formInfo.firstName || !formInfo.lastName || ! formInfo.bio || !formInfo.profession || !formInfo.zipCode || !formInfo.radius || !profileImg){
       return false;
     }
     return true;    
