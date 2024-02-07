@@ -52,7 +52,7 @@ function App() {
         axios
           .get(`${process.env.REACT_APP_BE_URL}/photos/${user.s3ProfilePhotoKey}/getphoto`, {responseType: 'blob'})
           .then((res) => {
-            console.log(res);
+            // console.log(res);
             setProfilePictureState(res.data);
           })
           .catch ( (err) => {

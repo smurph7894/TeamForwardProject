@@ -11,7 +11,7 @@ const ImageIcon = (props) => {
           axios
             .get(`${process.env.REACT_APP_BE_URL}/photos/${user.s3ProfilePhotoKey}/getphoto`, {responseType: 'blob'})
             .then((res) => {
-              console.log(res);
+              // console.log(res);
               const blobData = res.data;
               const blobUrl = URL.createObjectURL(blobData);
               setUserPicture(blobUrl);

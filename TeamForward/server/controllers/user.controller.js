@@ -162,6 +162,7 @@ module.exports = {
         user = res.json(response)
       }).catch ((err)=>{
         console.log("user not found")
+        return
       })
 
     User.deleteOne({ _id: req.params.id })
