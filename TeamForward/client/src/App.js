@@ -46,21 +46,20 @@ function App() {
           log(err);
           setApiComplete(true);
         });
-      }
+    };
 
-      if(user?.s3ProfilePhotoKey){
-        axios
-          .get(`${process.env.REACT_APP_BE_URL}/photos/${user.s3ProfilePhotoKey}/getphoto`, {responseType: 'blob'})
-          .then((res) => {
-            // console.log(res);
-            setProfilePictureState(res.data);
-          })
-          .catch ( (err) => {
-            console.log(err)
-          })
-      } else {
-        profilePictureState(blankProfileImg)
-      }
+    if (user?.s3ProfilePhotoKey) {
+      axios
+        .get(`${process.env.REACT_APP_BE_URL}/photos/${user.s3ProfilePhotoKey}/getphoto`, {responseType: 'blob'})
+        .then((res) => {
+          setProfilePictureState(res.data);
+        })
+        .catch ( (err) => {
+          console.log(err)
+        })
+    } else {
+      profilePictureState(blankProfileImg)
+    };
   }, [user]);
 
   if (!apiComplete) {

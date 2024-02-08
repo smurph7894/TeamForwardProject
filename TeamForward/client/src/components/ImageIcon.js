@@ -17,19 +17,19 @@ const ImageIcon = (props) => {
               setUserPicture(blobUrl);
             })
             .catch ( (err) => {
-              console.log(err)
-            })
+              console.log(err);
+            });
         } else {
             setUserPicture(blankProfileImg);
         };
-    },[]);
+    },[user]);
 
     return (
       <img
-      className={imgClassName} 
-      src={userPicture}
-      alt={`${user.firstName} profile picture`}
-      {...otherProps}
+        className={imgClassName} 
+        src={userPicture}
+        alt={`${user.firstName} profile picture`}
+        {...otherProps}
        />
     );
 };

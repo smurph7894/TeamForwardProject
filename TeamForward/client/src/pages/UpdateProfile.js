@@ -9,15 +9,10 @@ import NavMenu from "../components/NavMenu/NavMenu";
 
 const UpdateProfile = () => {
   const navigate = useNavigate();
-
   const user = useReactiveVar(userState);
   const profilePicture = useReactiveVar(profilePictureState);
-
   const [imgFile, setImgFile] = useState();
-
-  const [profileImg, setProfileImg] = useState(
-    profilePicture ? profilePicture : null
-  );
+  const [profileImg, setProfileImg] = useState(profilePicture || null);
 
   console.log("updateProfile UserState", user)
   const [formInfo, setFormInfo] = useState({
@@ -68,7 +63,7 @@ const UpdateProfile = () => {
     if(!user.s3ProfilePhotoKey && imgFile){
       const photoData = new FormData();
       photoData.append('photo', imgFile);
-      console.log("update profile, post call - no userprofileKey ")
+
       try{
         const response = await axios
           .post(`${process.env.REACT_APP_BE_URL}/user/${user._id}/photo`, photoData, {
@@ -76,16 +71,14 @@ const UpdateProfile = () => {
               'Content-Type': 'multipart/form-data'
             },
           })
-        console.log("if response", response.data);
         userState({
           ...user,
           s3ProfilePhotoKey: response.data.photoKey,
         });
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
     } else {
-      console.log("update profile, update call, has key ")
       const photoData = new FormData();
       photoData.append('photo', imgFile);
 
@@ -96,19 +89,17 @@ const UpdateProfile = () => {
               'Content-Type': 'multipart/form-data'
             },
           })
-        console.log("else response", response.data);
         userState({
           ...user,
           s3ProfilePhotoKey: response.data.photoKey,
         });
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
     }
   }
 
   const updateProfile = async (form) => {
-    console.log("form", form)
     const payload = {
       firstName: form.firstName,
       lastName: form.lastName,
@@ -132,26 +123,23 @@ const UpdateProfile = () => {
 
     try{
       const response = await axios
-        .put(`${process.env.REACT_APP_BE_URL}/teamForward/${user._id}`, payload)
+        .put(`${process.env.REACT_APP_BE_URL}/teamForward/${user._id}`, payload);
+
       userState(response.data);
-      console.log("user.s3ProfilePhotoKey", response.data.s3ProfilePhotoKey)
       photoKey = response.data.s3ProfilePhotoKey;
-      } catch (error) {
-        console.log(error)
-      }
-
-
-    try{
-      console.log("getting photo")
-      const response = await axios
-        .get(`${process.env.REACT_APP_BE_URL}/photos/${photoKey}/getphoto`, {responseType: 'blob'});
-      console.log(response)
-      setProfilePictureState(response.data);
     } catch (error) {
-      console.log(error)
+        console.log(error);
     }
 
-}
+    try{
+      const response = await axios
+        .get(`${process.env.REACT_APP_BE_URL}/photos/${photoKey}/getphoto`, {responseType: 'blob'});
+      setProfilePictureState(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -163,8 +151,6 @@ const UpdateProfile = () => {
       log(error);
     }
   };
-
-  
 
   return (
     <div className="flex flex-col">

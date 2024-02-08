@@ -1,4 +1,3 @@
-import { useReactiveVar } from "@apollo/client";
 import ImageIcon from "../ImageIcon";
 
 const ProfileImg = ({profileData, setProfileData}) => {
