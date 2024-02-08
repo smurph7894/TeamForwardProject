@@ -33,7 +33,7 @@ const Feed = () => {
     .then((res)=>{
       setUserList(res.data);
     }).catch((err)=>{
-      console.log(err);
+      // console.log(err);
     })
 
   },[interestArr, activityArr, user?.zipCode]);
@@ -55,9 +55,8 @@ const Feed = () => {
   return (
     <div className="">
       <div className="flex flex-col">
-        <div className='md:absolute'>
+        <div className='lg:absolute'>
           <NavMenu />
-          <h1 className="font-bold inline-block">{user ? `${user.firstName} ${user.lastName}`: ""}</h1>
         </div>
         <div className="mx-auto">
           <div> {userInfoNeeded()} </div>

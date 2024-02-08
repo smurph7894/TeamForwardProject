@@ -84,11 +84,11 @@ const UpdateProfile = () => {
       } catch (error) {
         console.log(error)
       }
-    } else {
+    } else if (user.s3ProfilePhotoKey && imgFile) {
       console.log("update profile, update call, has key ")
       const photoData = new FormData();
       photoData.append('photo', imgFile);
-
+      console.log("photoData", photoData)
       try {
         const response = await axios
           .put(`${process.env.REACT_APP_BE_URL}/user/${user._id}/photos/${user.s3ProfilePhotoKey}/update`, photoData, {
@@ -101,7 +101,9 @@ const UpdateProfile = () => {
           ...user,
           s3ProfilePhotoKey: response.data.photoKey,
         });
+        console.log("user after call and key added to user", user)
       } catch (error) {
+        console.log("catch statement for else if api call")
         console.log(error)
       }
     }
@@ -170,7 +172,6 @@ const UpdateProfile = () => {
     <div className="flex flex-col">
       <div className="lg:absolute">
         <NavMenu />
-        <h1 className="font-bold inline-block">{user ? `${user.firstName} ${user.lastName}`: ""}</h1>
       </div>
       <div className="m-0">
         <ProfileForm
