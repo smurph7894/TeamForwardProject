@@ -1,6 +1,6 @@
 import InboxList from "../components/Messages/InboxList";
 import { useReactiveVar } from "@apollo/client";
-import { userState } from "../GlobalState";
+import { profilePictureState, userState } from "../GlobalState";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Search from "../components/Messages/Search";
@@ -9,6 +9,7 @@ import NavMenu from "../components/NavMenu/NavMenu";
 
 const Inbox = () => {
   const user = useReactiveVar(userState);
+  const profilePicture = useReactiveVar(profilePictureState);
   const id = user._id;
   const navigate = useNavigate();
   const [chats, setChats] = useState([]);
@@ -51,7 +52,7 @@ const Inbox = () => {
                   <a className="inline-flex items-start mr-3" href="#0">
                     <img
                       className="object-cover w-20 h-20 rounded-full"
-                      src={user.cloudinaryProfileImgUrl}
+                      src={profilePicture}
                       width="48"
                       height="48"
                       alt="user profile picture"

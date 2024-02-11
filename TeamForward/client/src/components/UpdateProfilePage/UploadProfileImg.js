@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 import { userState } from "../../GlobalState";
 import { useReactiveVar } from "@apollo/client";
 
 
-const UploadProfileImg = ({ profileImg, setProfileImg }) => {
+const UploadProfileImg = ({ profileImg, setProfileImg, imgFile, setImgFile }) => {
   const user = useReactiveVar(userState);
 
   const [fileInputState, setFileInputState] = useState("");
@@ -13,6 +12,7 @@ const UploadProfileImg = ({ profileImg, setProfileImg }) => {
 
   const handleFileInputChange = (e) => {
     const file = e.target.files[0];
+    setImgFile(file)
     previewFile(file);
     setSelectedFile(file);
     setFileInputState(e.target.value);
@@ -24,14 +24,8 @@ const UploadProfileImg = ({ profileImg, setProfileImg }) => {
     reader.onloadend = () => {
       setPreviewSource(reader.result);
       setProfileImg(reader.result); // set base64 url to state
-      // console.log("New State:", profileImg)
       if (!previewSource) return;
-      uploadImage(previewSource);
     };
-  };
-
-  const uploadImage = async (base64EncodedImage) => {
-    // console.log("Upload Img works:", base64EncodedImage);
   };
 
   return (

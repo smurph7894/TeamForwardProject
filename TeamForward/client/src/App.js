@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useReactiveVar } from "@apollo/client";
-import { userState } from "./GlobalState";
+import { userState, profilePictureState, setProfilePictureState } from "./GlobalState";
 import log from "./helpers/logging";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -13,20 +13,19 @@ import MyProfile from "./pages/MyProfile"
 import UserProfile from "./pages/UserProfile";
 import Inbox from "./pages/Inbox"
 import Chat from "./components/Messages/Chat"
-
 import {io} from 'socket.io-client'
+import blankProfileImg from "../src/assets/home/blank-profile.png"
 
 const socket = io(process.env.REACT_APP_BE_URL)
-
 axios.defaults.withCredentials = true;
 
 const ProtectedRoute = ({ children }) => {
   const user = useReactiveVar(userState);
+  const profilePicture = useReactiveVar(profilePictureState);
 
   if (!user) {
     return <Navigate to="/signin" />;
   }
-
   return children;
 };
 
@@ -47,24 +46,25 @@ function App() {
           log(err);
           setApiComplete(true);
         });
-    }
+    };
+
+    if (user?.s3ProfilePhotoKey) {
+      axios
+        .get(`${process.env.REACT_APP_BE_URL}/photos/${user.s3ProfilePhotoKey}/getphoto`, {responseType: 'blob'})
+        .then((res) => {
+          setProfilePictureState(res.data);
+        })
+        .catch ( (err) => {
+          console.log(err)
+        })
+    } else {
+      profilePictureState(blankProfileImg)
+    };
   }, [user]);
-
-
-  // Socket.on("message",()=>{
-  //   axios.get(`${REACT_APP_BE_URL}/messaging/user/message/unreadCount`)
-  // //   .then((res)=>{
-
-  // //   }).catch((err)=>{
-  // //     console.log(err)
-  // //   })
-  // })
-
 
   if (!apiComplete) {
     return null;
   }
-
 
   return (
     <BrowserRouter>
@@ -83,7 +83,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
         <Route
           path="/updateprofile"
           element={
@@ -100,7 +99,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-        
         <Route
           path="/userProfile/:id"
           element={
