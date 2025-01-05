@@ -5,6 +5,7 @@ const { authenticate } = require("../config/jwt.config");
 const { addSinglePhoto, updatePhoto, getPhoto, deleteAPhoto } = require("../controllers/s3.controller");
 const multer = require("multer");
 
+//used for S# photo uploads
 const upload = multer({dest: `uploads/`});
 
 module.exports = (app) => {
@@ -16,7 +17,7 @@ module.exports = (app) => {
   //autheticated routes
 
   //User
-  app.get("/teamForward/location", authenticate, LocationController.getLocation);
+  // app.get("/teamForward/location", authenticate, LocationController.getLocation); //only used if we do full address searches
   app.get("/teamForward/loggedInUser", authenticate, UserController.loggedInUser);
   app.get("/teamForward/:id", authenticate, UserController.findOneUser);
   app.get("/teamForward", authenticate, UserController.findAllUsers);
