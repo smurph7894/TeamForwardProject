@@ -43,7 +43,8 @@ const Chat = ({socket}) => {
       setMessageList((prevMessageList) => [...prevMessageList, updatedMessage]);
 
     })
-    // return () => socket.disconnect(true);
+    //closes message specific listener when navigating away from chat
+    return () => socket.off('message');
   },[socket])
 
   useEffect(()=>{
