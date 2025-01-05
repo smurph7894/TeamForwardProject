@@ -88,7 +88,7 @@ const UpdateProfile = () => {
       console.log("update profile, update call, has key ")
       const photoData = new FormData();
       photoData.append('photo', imgFile);
-      console.log("photoData", photoData)
+      // console.log("photoData", photoData)
       try {
         const response = await axios
           .put(`${process.env.REACT_APP_BE_URL}/user/${user._id}/photos/${user.s3ProfilePhotoKey}/update`, photoData, {

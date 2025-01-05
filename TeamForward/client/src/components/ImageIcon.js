@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import blankProfileImg from "../../src/assets/home/blank-profile.png"
 
 const ImageIcon = (props) => {
+  //...otherProps is a way to pass all the props that are not destructured in the const {user, imgClassName, ...otherProps} = props; line
     const {user, imgClassName, ...otherProps} = props;
     const [userPicture, setUserPicture] = useState("");
 
