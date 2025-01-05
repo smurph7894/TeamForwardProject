@@ -1,4 +1,3 @@
-const Photo = require("./Photo");
 const GeoJSON = require("mongoose-geojson-schema");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
@@ -34,13 +33,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
   },
   // add photo model to save profile photo info
-  photos: {
-    type: [Photo.schema],
-  },
-  cloudinaryProfileImgUrl: {
-    type: String,
-  },
-  cloudinaryId: {
+  s3ProfilePhotoKey: {
     type: String,
   },
   profession: {

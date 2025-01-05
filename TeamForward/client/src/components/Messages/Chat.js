@@ -3,23 +3,19 @@ import axios from 'axios'
 import {io} from 'socket.io-client'
 import { useParams } from 'react-router-dom';
 import { useReactiveVar } from "@apollo/client";
-import { userState } from "../../GlobalState";
+import { profilePictureState, userState } from "../../GlobalState";
 import dateformat from 'dateformat'
 import NavMenu from '../NavMenu/NavMenu';
 import useChatScroll from './UseChatScroll';
+import ImageIcon from '../ImageIcon';
 
 
 const Chat = ({socket}) => {
-
   const user = useReactiveVar(userState);
-
   const {chatId} = useParams()
-
   const [message,setMessage] = useState('')
-
   const [messageList,setMessageList] = useState([])
   const [otherUser,setOtherUser] = useState({})
-
   const chatWindowRef = useRef(null);
 
   useEffect(()=>{
@@ -44,11 +40,11 @@ const Chat = ({socket}) => {
       const newFrom = otherUser._id == data.from ? otherUser.firstName : data.from
       const updatedMessage = {...data, from: newFrom };
 
-      
       setMessageList((prevMessageList) => [...prevMessageList, updatedMessage]);
 
     })
-    // return () => socket.disconnect(true);
+    //closes message specific listener when navigating away from chat
+    return () => socket.off('message');
   },[socket])
 
   useEffect(()=>{
@@ -81,26 +77,33 @@ const Chat = ({socket}) => {
       unread:false
     })
     setMessage("")
-
   }
-
 
   return (
     <div className="flex flex-col h-screen">
-      <div className="block sm:items-center justify-between">
+      <div className="flex block sm:items-center justify-between">
         <NavMenu />
       </div>
       <div className="flex flex-col space-y-4 p-3 sm:w-1/3 sm:mx-auto overflow-y-auto h-full scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch">
+        <div className=" text-center border-b pb-3">
+          <h1 className="text-4xl font-medium text-gray-700">
+            {`${otherUser.firstName} ${otherUser.lastName}`}
+          </h1>
+        </div>
           {
             messageList.map((message)=>{
               // conditionally renders message on either side depending on user
               let messageSide = user._id === message.from ? "flex flex-row justify-start mb-2" :"flex flex-row justify-end mb-2";
+              let bGColor = user._id === message.from ? "relative px-4 py-2 max-w-xs rounded-lg bg-slate-100" :"relative px-4 py-2 max-w-xs rounded-lg bg-green-200";
               // conditionally renders avatar for each user
-              let image = user._id === message.from ? user.cloudinaryProfileImgUrl : otherUser.cloudinaryProfileImgUrl;
+              let imageUser = user._id === message.from ? user : otherUser;
               return <div key={message._id} className={messageSide}>
-                      <img className="w-8 h-8 rounded-full align-middle" src={image} alt={user.firstName} />
+                      <ImageIcon
+                        imgClassName = {'w-8 h-8 rounded-full align-middle'}
+                        user = {imageUser}
+                      />
                       <div className="flex flex-col items-start">
-                        <div className="relative px-4 py-2 max-w-xs rounded-lg">
+                        <div className={bGColor}>
                           <div className="text-med leading-tight mb-2">
                             {message.message}
                           </div>

@@ -10,10 +10,7 @@ const Hero = () => {
         <div className="">
           <section className="mb-36 ">
             <nav className="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between">
-              <div
-                div
-                className="px-6 w-full flex flex-wrap items-center justify-between"
-              >
+              <div className="px-6 w-full flex flex-wrap items-center justify-between">
                 <div className="flex items-center">
                   <h1 className="font-bold text-xl">TEAM FORWARD</h1>
                 </div>

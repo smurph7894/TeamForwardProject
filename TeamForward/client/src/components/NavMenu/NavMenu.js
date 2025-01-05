@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react'
 import axios from 'axios';
 import { NavLink, useNavigate } from 'react-router-dom'
 import { useReactiveVar } from '@apollo/client';
-import { userState } from "../../GlobalState";
+import { userState, profilePictureState } from "../../GlobalState";
 
 const NavMenu = () => {
     const user = useReactiveVar(userState);
+    const profilePicture = useReactiveVar(profilePictureState);
     const navigate = useNavigate();
     const [open,setOpen] = useState(false);
     const [unreadCount, setUnreadCount] = useState();
@@ -42,15 +43,20 @@ const NavMenu = () => {
     }
 
     return (
-    <div className="p-2 inline-block h-2/3">
+    <div className="pt-2 p-1 inline-block h-2/3">
         <button onClick={dropDown}>
-            <img src={user.cloudinaryProfileImgUrl} alt="coverImage" className="object-cover w-20 h-20 rounded-full" />
+            <img src={profilePicture} alt="coverImage" className="object-cover w-12 h-12 rounded-full" />
         </button> 
         {displayNotifications(unreadCount)}
         {
             open ? (
-                <div className="absolute w-25 border p-1 rounded-lg shadow-lg block bg-white mt-1 z-40">
+                <div className="absolute w-25 border p-1 rounded-lg shadow-lg block bg-white mt-1 z-40 min-w-4">
                     <ul className="bg-white">
+                        <li className="block">
+                            <div className="text-lg text-start font-bold  p-1 rounded-lg block w-full">
+                                {user ? `${user.firstName} ${user.lastName}`: ""}
+                            </div>
+                        </li>
                         <li className="block">
                         <NavLink to="/myProfile" className="text-lg text-start font-semibold border p-1 rounded-lg shadow-lg block w-full ">My Profile</NavLink>
                         </li>

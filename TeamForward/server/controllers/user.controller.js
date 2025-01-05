@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const locationHelpers = require("../helpers/locationHelpers");
-const cloudinary = require("../config/cloudinary");
+const {deleteAPhoto} = require('../controllers/s3.controller')
 
 module.exports = {
   createNewUser: (req, res) => {
@@ -101,32 +101,7 @@ module.exports = {
     let body = { ...req.body };
 
     log("FIRST LOG HERE REQ.BODY:",body, "FIRST LOG REQ.PARAMS",req.params);
-    if (body.photo) {
-      //if there's an existing cloudinaryProfileImgUrl/cloudinaryId, then delete it from cloudinary
-      let userPhoto = await User.findById({_id: req.params.id });
 
-      try {
-        await cloudinary.uploader.destroy(userPhoto.cloudinaryId);
-      } catch (exception) {
-        console.log("Something went wrong with updateUser", exception);
-      }
-
-      let result;
-      try {
-        result = await cloudinary.uploader.upload(body.photo);
-        const { secure_url, public_id } = result;
-
-        body.cloudinaryProfileImgUrl = secure_url;
-        body.cloudinaryId = public_id;
-
-        delete body.photo;
-      } catch (exception) {
-        res.status(400).json(exception);
-        log("Something went wrong with cloudinary upload");
-      }
-    }
-
-    
     if(body.zipCode){
       const address = body.zipCode;
       const locationData = await locationHelpers.getLocationHelper(address);
@@ -181,6 +156,15 @@ module.exports = {
   },
 
   deleteUser: (req, res) => {
+    let user;
+    User.findOne({ _id: req.params.id })
+      .then((response) => {
+        user = res.json(response)
+      }).catch ((err)=>{
+        console.log("user not found")
+        return
+      })
+
     User.deleteOne({ _id: req.params.id })
       .then((deletedUser) => {
         log(deletedUser);
@@ -193,5 +177,11 @@ module.exports = {
         });
         log("deleteUser failed");
       });
+
+    req = {
+      ...req,
+      photoKey: user.s3ProfilePhotoKey,
+    }
+    deleteAPhoto(req)
   },
 };

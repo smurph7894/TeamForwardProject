@@ -1,12 +1,12 @@
 import { userState } from "../GlobalState";
-import { Navigate, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { useReactiveVar } from "@apollo/client";
 import log from "../helpers/logging";
 import axios from "axios";
 import NavMenu from "../components/NavMenu/NavMenu";
 import BasicButtonStyling from "../components/Button";
-import blankProfileImg from "../../src/assets/home/blank-profile.png"
+import ImageIcon from "../components/ImageIcon";
 
 const interests = ["chingu", "networking", "mentorship"];
 const activities = ["virtualCoffee", "hiking", "running"];
@@ -33,8 +33,9 @@ const Feed = () => {
     .then((res)=>{
       setUserList(res.data);
     }).catch((err)=>{
-      console.log(err);
+      // console.log(err);
     })
+
   },[interestArr, activityArr, user?.zipCode]);
 
   const userInfoNeeded = () => {
@@ -54,9 +55,8 @@ const Feed = () => {
   return (
     <div className="">
       <div className="flex flex-col">
-        <div className='md:absolute'>
+        <div className='lg:absolute'>
           <NavMenu />
-          <h1 className="font-bold inline-block">{user ? `${user.firstName} ${user.lastName}`: ""}</h1>
         </div>
         <div className="mx-auto">
           <div> {userInfoNeeded()} </div>
@@ -67,7 +67,7 @@ const Feed = () => {
                 {interests.map((interest) => {
                   const className = interestArr.includes(interest)
                     ? "bg-green-900 text-white inline-flex capitalize items-center border border-green-900 font-medium rounded-lg text-sm px-2.5 py-1.5 text-center mr-3"
-                    : "text-green-900 inline-flex items-center capitalize border border-green-900 font-medium rounded-lg text-sm px-2.5 py-1.5 text-center mr-3"
+                    : "text-green-900 inline-flex items-center capitalize border-2 border-green-900 font-medium rounded-lg text-sm px-2.5 py-1.5 text-center mr-3 "
 
                   return <BasicButtonStyling
                     text={interest}
@@ -90,7 +90,7 @@ const Feed = () => {
               {activities.map((activity) => {
                 const className = activityArr.includes(activity)
                   ? "bg-green-900 text-white inline-flex items-center capitalize border border-green-900 font-medium rounded-lg text-sm px-2.5 py-1.5 text-center mr-3 "
-                  : "text-green-900 inline-flex items-center capitalize border border-green-900 font-medium rounded-lg text-sm px-2.5 py-1.5 text-center mr-3 "
+                  : "text-green-900 inline-flex items-center capitalize border-2 border-green-900 font-medium rounded-lg text-sm px-2.5 py-1.5 text-center mr-3 "
 
                 return <BasicButtonStyling
                   text={activity}
@@ -122,10 +122,10 @@ const Feed = () => {
             <div
               className="max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
               <a href="#!" data-te-ripple-init data-te-ripple-color="light">
-                <img
-                  className="rounded-t-lg h-40 object-cover w-screen"    
-                  src={userProfileData.cloudinaryProfileImgUrl ? userProfileData.cloudinaryProfileImgUrl : blankProfileImg}
-                  alt="" />
+                < ImageIcon
+                  className={"rounded-t-lg h-40 object-cover w-screen"}    
+                  user={userProfileData} 
+                />
               </a>
               <div className="m-3">
                 <h5

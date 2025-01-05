@@ -69,7 +69,7 @@ Team Forward allows users to:
     <li>Mongoose</li>
     <li>Passport.js</li>
     <li>Dotenv</li>
-    <li>Cloudinary</li>
+    <li>S3</li>
     <li>JWT</li>
     <li>Socket.io</li>
   </ul>
